@@ -1,0 +1,14 @@
+"Recursive factorial in SOL25"
+class Main : Object {
+    run [ |
+        x := self factorial: 5.
+        s := x asString.
+        _ := s print.
+    ]
+
+    factorial: [ :n |
+        r := (n equalTo: 0)
+            ifTrue: [ | one := 1. ]
+            ifFalse: [ | prev := self factorial: (n minus: 1). res := n multiplyBy: prev. ].
+    ]
+}
