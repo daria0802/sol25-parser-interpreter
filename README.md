@@ -43,8 +43,6 @@ A single-file Python 3 tool with four stages:
 
 Details are in [`parser/DESIGN.md`](parser/DESIGN.md).
 
-**Tests:** 125 of 142 community tests pass. The remaining failures are edge cases: some string escape sequences, whitespace inside keyword selectors, and circular-inheritance detection.
-
 ## Part 2: Interpreter (`interpreter/`)
 
 An object-oriented PHP 8 interpreter that runs the XML program:
